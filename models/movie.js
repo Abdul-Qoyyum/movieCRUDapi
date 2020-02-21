@@ -8,4 +8,6 @@ const movieSchema  = new Schema({
  "genre" : "String"
 });
 
-module.exports = new movie("Movie", movieSchema);
+const connection = mongoose.createConnection("mongodb://localhost:27017/test");
+module.exports = connection.model("Movie", movieSchema);
+
