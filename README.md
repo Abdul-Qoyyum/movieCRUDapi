@@ -1,1 +1,1 @@
-# Movie CRUD REST api with nodejs, NeDB and express
+# Movie CRUD REST api with nodejs, mongodb and express
