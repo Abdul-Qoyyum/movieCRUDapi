@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const movies = require("./routes/movie");
 
 const app = express();
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : false}));
 app.use("/api", movies);
 

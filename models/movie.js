@@ -8,6 +8,7 @@ const movieSchema  = new Schema({
  "genre" : "String"
 });
 
-const connection = mongoose.createConnection("mongodb://localhost:27017/test");
+const connection = mongoose.createConnection("mongodb://localhost:27017/test",{ useNewUrlParser: true,
+  useUnifiedTopology: true});
 module.exports = connection.model("Movie", movieSchema);
 
